@@ -1,3 +1,10 @@
 {
-  "buildCommand": "npm run build"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/index.js": {
+      "runtime": "nodejs22.x"
+    }
+  }
 }
